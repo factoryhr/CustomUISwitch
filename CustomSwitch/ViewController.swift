@@ -72,6 +72,9 @@ class ViewController: UIViewController {
         switch4.animationDuration = 0.75
         switch4.thumbShaddowRadius = 2
         switch4.thumbShaddowOppacity = 0.7
+        //switch4.areLabelsShown = true
+        switch4.onImage = #imageLiteral(resourceName: "chackamark")
+        switch4.offImage = #imageLiteral(resourceName: "delete")
         
         self.view.addSubview(switch4)
         
@@ -105,6 +108,23 @@ class ViewController: UIViewController {
         switch6.padding = -2
         
         self.view.addSubview(switch6)
+        
+        //
+        let switch7 = CustomSwitch(frame: CGRect(x: 50, y: 350, width: 55, height: 25))
+        
+        switch7.isOn = false
+        switch7.onTintColor = UIColor.lightGray
+        switch7.offTintColor = UIColor.darkGray
+        switch7.cornerRadius = 0.5
+        switch7.thumbCornerRadius = 0.5
+        switch7.thumbSize = CGSize(width: 30, height: 30)
+        switch7.thumbTintColor = /*UIColor.clear*/UIColor(red: 1/255, green: 150/255, blue: 137/255, alpha: 1)
+        switch7.padding = 0
+        switch7.animationDuration = 0.7
+        //switch7.thumbImage = #imageLiteral(resourceName: "CustomSwitchImg.png")
+        switch7.onImage = #imageLiteral(resourceName: "chackamark")
+        switch7.offImage = #imageLiteral(resourceName: "delete")
+        self.view.addSubview(switch7)
     }
 }
 
