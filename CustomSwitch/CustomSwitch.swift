@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 final class CustomSwitch: UIControl {
-
+    
     // MARK: Public properties
     
     @IBInspectable public var isOn:Bool = true
@@ -25,7 +25,7 @@ final class CustomSwitch: UIControl {
     @IBInspectable  public var onTintColor: UIColor = UIColor(red: 144/255, green: 202/255, blue: 119/255, alpha: 1) {
         didSet {
             self.setupUI()
-
+            
         }
     }
     
@@ -53,7 +53,7 @@ final class CustomSwitch: UIControl {
     private var privateCornerRadius: CGFloat = 0.5 {
         didSet {
             self.layoutSubviews()
-
+            
         }
     }
     
@@ -104,7 +104,7 @@ final class CustomSwitch: UIControl {
         didSet {
             self.onImageView.image = onImage
             self.layoutSubviews()
-
+            
         }
         
     }
@@ -113,7 +113,7 @@ final class CustomSwitch: UIControl {
         didSet {
             self.offImageView.image = offImage
             self.layoutSubviews()
-
+            
         }
         
     }
@@ -159,7 +159,7 @@ final class CustomSwitch: UIControl {
     fileprivate var thumbView = CustomThumbView(frame: CGRect.zero)
     fileprivate var onImageView = UIImageView(frame: CGRect.zero)
     fileprivate var offImageView = UIImageView(frame: CGRect.zero)
-
+    
     fileprivate var onPoint = CGPoint.zero
     fileprivate var offPoint = CGPoint.zero
     fileprivate var isAnimating = false
@@ -207,7 +207,7 @@ extension CustomSwitch {
         self.setupLabels()
         
     }
-
+    
     
     private func clear() {
         for view in self.subviews {
@@ -223,16 +223,16 @@ extension CustomSwitch {
     }
     
     private func animate() {
-     
+        
         self.isOn = !self.isOn
         self.isAnimating = true
         
         UIView.animate(withDuration: self.animationDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction], animations: {
-          
+            
             self.thumbView.frame.origin.x = self.isOn ? self.onPoint.x : self.offPoint.x
             self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
             self.setOnOffImageFrame()
-
+            
         }, completion: { _ in
             
             self.isAnimating = false
@@ -241,7 +241,7 @@ extension CustomSwitch {
         })
     }
     
-
+    
 }
 
 // Mark: Public methods
@@ -253,7 +253,7 @@ extension CustomSwitch {
         if !self.isAnimating {
             self.layer.cornerRadius = self.bounds.size.height * self.cornerRadius
             self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
-
+            
             // thumb managment
             // get thumb size, if none set, use one from bounds
             let thumbSize = self.thumbSize != CGSize.zero ? self.thumbSize : CGSize(width: self.bounds.size.height - 2, height: self.bounds.height - 2)
@@ -272,7 +272,7 @@ extension CustomSwitch {
                 let labelWidth = self.bounds.width / 2 - self.padding * 2
                 self.labelOn.frame = CGRect(x: 0, y: 0, width: labelWidth, height: self.frame.height)
                 self.labelOff.frame = CGRect(x: self.frame.width - labelWidth, y: 0, width: labelWidth, height: self.frame.height)
-
+                
             }
             
             // on/off images
@@ -281,16 +281,19 @@ extension CustomSwitch {
             guard onImage != nil && offImage != nil else {
                 return
             }
-
+            
             let frameSize = thumbSize.width > thumbSize.height ? thumbSize.height * 0.7 : thumbSize.width * 0.7
-
+            
             let onOffImageSize = CGSize(width: frameSize, height: frameSize)
-
-            self.onImageView.center = CGPoint(x: self.onPoint.x + self.thumbSize.width / 2, y: self.onPoint.y + self.thumbSize.height / 2)
-            self.offImageView.center = CGPoint(x: self.offPoint.x + self.thumbSize.width / 2, y: self.offPoint.y + self.thumbSize.height / 2)
+            
+            
             self.onImageView.frame.size = onOffImageSize
             self.offImageView.frame.size = onOffImageSize
-
+            
+            self.onImageView.center = CGPoint(x: self.onPoint.x + self.thumbView.frame.size.width / 2, y: self.thumbView.center.y)
+            self.offImageView.center = CGPoint(x: self.offPoint.x + self.thumbView.frame.size.width / 2, y: self.thumbView.center.y)
+            
+            
             self.onImageView.alpha = self.isOn ? 1.0 : 0.0
             self.offImageView.alpha = self.isOn ? 0.0 : 1.0
             
@@ -341,8 +344,8 @@ extension CustomSwitch {
             return
         }
         
-        self.onImageView.center.x = self.isOn ? self.onPoint.x + self.thumbSize.width / 2 : self.frame.width
-        self.offImageView.center.x = !self.isOn ? self.offPoint.x + self.thumbSize.width / 2 : 0
+        self.onImageView.center.x = self.isOn ? self.onPoint.x + self.thumbView.frame.size.width / 2 : self.frame.width
+        self.offImageView.center.x = !self.isOn ? self.offPoint.x + self.thumbView.frame.size.width / 2 : 0
         self.onImageView.alpha = self.isOn ? 1.0 : 0.0
         self.offImageView.alpha = self.isOn ? 0.0 : 1.0
         

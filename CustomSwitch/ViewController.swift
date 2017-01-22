@@ -122,7 +122,7 @@ class ViewController: UIViewController {
         switch7.padding = 0
         switch7.animationDuration = 0.7
         //switch7.thumbImage = #imageLiteral(resourceName: "CustomSwitchImg.png")
-        switch7.onImage = #imageLiteral(resourceName: "chackamark")
+        switch7.onImage = #imageLiteral(resourceName: "checkamark")
         switch7.offImage = #imageLiteral(resourceName: "delete")
         self.view.addSubview(switch7)
     }
