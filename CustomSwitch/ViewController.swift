@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         switch4.thumbShaddowRadius = 2
         switch4.thumbShaddowOppacity = 0.7
         //switch4.areLabelsShown = true
-        switch4.onImage = #imageLiteral(resourceName: "chackamark")
+        switch4.onImage = #imageLiteral(resourceName: "checkamark")
         switch4.offImage = #imageLiteral(resourceName: "delete")
         
         self.view.addSubview(switch4)
