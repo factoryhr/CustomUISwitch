@@ -14,6 +14,7 @@ final class CustomSwitch: UIControl {
     // MARK: Public properties
     
     @IBInspectable public var isOn:Bool = true
+    
     public var animationDuration: Double = 0.5
     
     @IBInspectable  public var padding: CGFloat = 1 {
@@ -222,24 +223,47 @@ extension CustomSwitch {
         return true
     }
     
-    private func animate() {
+    func setOn(on:Bool, animated:Bool) {
         
-        self.isOn = !self.isOn
+        switch animated {
+        case true:
+            self.animate(on: on)
+        case false:
+            self.isOn = on
+            self.setupViewsOnAction()
+            self.completeAction()
+        }
+        
+    }
+    
+    fileprivate func animate(on:Bool? = nil) {
+        
+        self.isOn = on ?? !self.isOn
+        
         self.isAnimating = true
         
         UIView.animate(withDuration: self.animationDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction], animations: {
-            
-            self.thumbView.frame.origin.x = self.isOn ? self.onPoint.x : self.offPoint.x
-            self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
-            self.setOnOffImageFrame()
+            self.setupViewsOnAction()
             
         }, completion: { _ in
-            
-            self.isAnimating = false
-            self.sendActions(for: UIControlEvents.valueChanged)
+            self.completeAction()
             
         })
     }
+    
+    private func setupViewsOnAction() {
+        self.thumbView.frame.origin.x = self.isOn ? self.onPoint.x : self.offPoint.x
+        self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
+        self.setOnOffImageFrame()
+        
+    }
+    
+    private func completeAction() {
+        self.isAnimating = false
+        self.sendActions(for: UIControlEvents.valueChanged)
+        
+    }
+    
     
     
 }

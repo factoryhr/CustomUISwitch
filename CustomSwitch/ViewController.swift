@@ -9,24 +9,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var uiswitch: UISwitch!
+    
+    let changeSwitchBtn:UIButton = {
+        let button = UIButton(frame: .zero)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Animate switch1", for: .normal)
+        button.setTitleColor(UIColor.blue, for: .normal)
+        button.backgroundColor = UIColor.green
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        button.layer.cornerRadius = 10
+        return button
+    }()
+    
+    var switch1:CustomSwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        //
-        let switch1 = CustomSwitch(frame: CGRect(x: 50, y: 50, width: 55, height: 25))
         
-        switch1.isOn = false
-        switch1.onTintColor = UIColor(red: 127/255, green: 202/255, blue: 196/255, alpha: 1)
-        switch1.offTintColor = UIColor.lightGray
-        switch1.cornerRadius = 0.5
-        switch1.thumbCornerRadius = 0.5
-        switch1.thumbSize = CGSize(width: 30, height: 30)
-        switch1.thumbTintColor = UIColor(red: 1/255, green: 150/255, blue: 137/255, alpha: 1)
-        switch1.padding = 0
-        switch1.animationDuration = 0.25
+        self.configureSwitches()
+        self.configureButton()
+        
+    }
+    
+    private func configureSwitches() {
+        
+        self.switch1 = CustomSwitch(frame: CGRect(x: 50, y: 50, width: 55, height: 25))
+        self.switch1.isOn = false
+        self.switch1.onTintColor = UIColor(red: 127/255, green: 202/255, blue: 196/255, alpha: 1)
+        self.switch1.offTintColor = UIColor.lightGray
+        self.switch1.cornerRadius = 0.5
+        self.switch1.thumbCornerRadius = 0.5
+        self.switch1.thumbSize = CGSize(width: 30, height: 30)
+        self.switch1.thumbTintColor = UIColor(red: 1/255, green: 150/255, blue: 137/255, alpha: 1)
+        self.switch1.padding = 0
+        self.switch1.animationDuration = 0.25
         
         self.view.addSubview(switch1)
         
@@ -125,6 +143,26 @@ class ViewController: UIViewController {
         switch7.onImage = #imageLiteral(resourceName: "checkamark")
         switch7.offImage = #imageLiteral(resourceName: "delete")
         self.view.addSubview(switch7)
+        
+    }
+    
+    private func configureButton() {
+        
+        self.changeSwitchBtn.addTarget(self, action: #selector(changeSwitchBtnPressed), for: .touchUpInside)
+        self.view.addSubview(self.changeSwitchBtn)
+        
+        NSLayoutConstraint.activate([
+            self.changeSwitchBtn.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant:-15),
+            self.changeSwitchBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant:15),
+            self.changeSwitchBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -15),
+            self.changeSwitchBtn.heightAnchor.constraint(equalToConstant: 30)
+            ])
+        
+    }
+    
+    func changeSwitchBtnPressed() {
+        self.switch1.setOn(on: !self.switch1.isOn, animated: true)
+        
     }
 }
 
