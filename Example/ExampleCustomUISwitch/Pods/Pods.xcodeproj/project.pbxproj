@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C94BAE640CE808444CF5B2E6971B2CC /* CustomUISwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */; };
+		2CF5BAB92F063799EBF5DE12F6342C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		6114390654EA4710D5EBE4563E58EC86 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */; };
+		82A21C8DABD4106AC06C23C999427E1C /* Pods-ExampleCustomUISwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B35B6DBF2C09A754D34372E882E8B8D /* Pods-ExampleCustomUISwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E0BE1F5D88512515A5AF1E151731CB /* Pods-ExampleCustomUISwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AEB45993BA97AE17BDEA016FBF1B85 /* Pods-ExampleCustomUISwitch-dummy.m */; };
+		955ED9BFF3E1488356253BD5C505F949 /* CustomThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */; };
+		B7D302BD5D565E9D5BF7F0AD1EC99C20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		C8B623A3466D437CE78EC457419863CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		DE623B133E7D8340B97D1A88E15BB893 /* CustomUISwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A361004384BE8E99E4AC974AC4C69FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DAD39EBB56449097E4E538E1ACB7D95;
+			remoteInfo = CustomUISwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F9AC69F0B99D3D1E1CC0F44F572FCE5 /* CustomUISwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CustomUISwitch.framework; path = CustomUISwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-umbrella.h"; sourceTree = "<group>"; };
+		1DAB3BBCADF02EA9E710DC7EB72009C9 /* Pods-ExampleCustomUISwitch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleCustomUISwitch-frameworks.sh"; sourceTree = "<group>"; };
+		20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomThumbView.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomThumbView.swift; sourceTree = "<group>"; };
+		36EAAD64998C78C4E74B33F62B24C704 /* Pods_ExampleCustomUISwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleCustomUISwitch.framework; path = "Pods-ExampleCustomUISwitch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37A0EAEA0F7488FEC5B21EB68A6FA00E /* Pods-ExampleCustomUISwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleCustomUISwitch.release.xcconfig"; sourceTree = "<group>"; };
+		38F5CCD1A1BC5494D49EC63305B28463 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41DC36E6BF0E067B0088DB347C407386 /* Pods-ExampleCustomUISwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExampleCustomUISwitch.modulemap"; sourceTree = "<group>"; };
+		4B35B6DBF2C09A754D34372E882E8B8D /* Pods-ExampleCustomUISwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleCustomUISwitch-umbrella.h"; sourceTree = "<group>"; };
+		57AEB45993BA97AE17BDEA016FBF1B85 /* Pods-ExampleCustomUISwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleCustomUISwitch-dummy.m"; sourceTree = "<group>"; };
+		66F650BE8D42AED616DE6418A56DB617 /* Pods-ExampleCustomUISwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleCustomUISwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		6E34109B8F0E620E292986513FC34F3B /* CustomUISwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CustomUISwitch.modulemap; sourceTree = "<group>"; };
+		6F9C03D25FA7C25E82061B36C8911755 /* CustomUISwitch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CustomUISwitch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75B0F0B68CC52B389BF852C3CFF50667 /* Pods-ExampleCustomUISwitch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleCustomUISwitch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D7EC492640349CD187C4D8774EA59BF /* Pods-ExampleCustomUISwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleCustomUISwitch-Info.plist"; sourceTree = "<group>"; };
+		84137EFCCD06DF514EDA18B7357F6B5B /* CustomUISwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CustomUISwitch-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5F9AEB23226CDEBB9B3579CFFAD4733 /* Pods-ExampleCustomUISwitch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleCustomUISwitch-acknowledgements.plist"; sourceTree = "<group>"; };
+		B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CustomUISwitch.xcconfig; sourceTree = "<group>"; };
+		B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CustomUISwitch-dummy.m"; sourceTree = "<group>"; };
+		B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSwitch.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomSwitch.swift; sourceTree = "<group>"; };
+		EB01B0684F316B23A790EA834434F087 /* CustomUISwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-prefix.pch"; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3B0A1CD1F0587859FB2AFAACF6C8771 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBAE592DB52AC0FA7D752C7D10382874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF5BAB92F063799EBF5DE12F6342C03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E8D0BBE3FDF51E0212CEDA0024EA86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D302BD5D565E9D5BF7F0AD1EC99C20 /* Foundation.framework in Frameworks */,
+				C8B623A3466D437CE78EC457419863CC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		263A1B54F38319E2CDE4D6BC03CE371C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E34109B8F0E620E292986513FC34F3B /* CustomUISwitch.modulemap */,
+				B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */,
+				B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */,
+				84137EFCCD06DF514EDA18B7357F6B5B /* CustomUISwitch-Info.plist */,
+				EB01B0684F316B23A790EA834434F087 /* CustomUISwitch-prefix.pch */,
+				186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/ExampleCustomUISwitch/Pods/Target Support Files/CustomUISwitch";
+			sourceTree = "<group>";
+		};
+		2A5F0F0E05CFC674E89ACFE8E5CB1A77 /* Pods-ExampleCustomUISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				41DC36E6BF0E067B0088DB347C407386 /* Pods-ExampleCustomUISwitch.modulemap */,
+				75B0F0B68CC52B389BF852C3CFF50667 /* Pods-ExampleCustomUISwitch-acknowledgements.markdown */,
+				A5F9AEB23226CDEBB9B3579CFFAD4733 /* Pods-ExampleCustomUISwitch-acknowledgements.plist */,
+				57AEB45993BA97AE17BDEA016FBF1B85 /* Pods-ExampleCustomUISwitch-dummy.m */,
+				1DAB3BBCADF02EA9E710DC7EB72009C9 /* Pods-ExampleCustomUISwitch-frameworks.sh */,
+				7D7EC492640349CD187C4D8774EA59BF /* Pods-ExampleCustomUISwitch-Info.plist */,
+				4B35B6DBF2C09A754D34372E882E8B8D /* Pods-ExampleCustomUISwitch-umbrella.h */,
+				66F650BE8D42AED616DE6418A56DB617 /* Pods-ExampleCustomUISwitch.debug.xcconfig */,
+				37A0EAEA0F7488FEC5B21EB68A6FA00E /* Pods-ExampleCustomUISwitch.release.xcconfig */,
+			);
+			name = "Pods-ExampleCustomUISwitch";
+			path = "Target Support Files/Pods-ExampleCustomUISwitch";
+			sourceTree = "<group>";
+		};
+		3C9530B1E8D09FAE2B02F13E58BA19A4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6F9C03D25FA7C25E82061B36C8911755 /* CustomUISwitch.podspec */,
+				F3B0A1CD1F0587859FB2AFAACF6C8771 /* LICENSE */,
+				38F5CCD1A1BC5494D49EC63305B28463 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		52213C6F64F9136DC0C3213DA2490CE1 /* CustomUISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */,
+				20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */,
+				3C9530B1E8D09FAE2B02F13E58BA19A4 /* Pod */,
+				263A1B54F38319E2CDE4D6BC03CE371C /* Support Files */,
+			);
+			name = CustomUISwitch;
+			path = /Users/llovretic/Desktop/Posao/FACTORY/CustomUISwitch;
+			sourceTree = "<absolute>";
+		};
+		6637A3A313E2A7836C8B0818C7D30D07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F0F0E05CFC674E89ACFE8E5CB1A77 /* Pods-ExampleCustomUISwitch */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		734540BC9151113E9CA20B03465A9C1E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52213C6F64F9136DC0C3213DA2490CE1 /* CustomUISwitch */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		79D53098B39546FD4B599BA0805E2314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F9AC69F0B99D3D1E1CC0F44F572FCE5 /* CustomUISwitch.framework */,
+				36EAAD64998C78C4E74B33F62B24C704 /* Pods_ExampleCustomUISwitch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				734540BC9151113E9CA20B03465A9C1E /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				79D53098B39546FD4B599BA0805E2314 /* Products */,
+				6637A3A313E2A7836C8B0818C7D30D07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84131A909E74D29297D452A7A8543AC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A21C8DABD4106AC06C23C999427E1C /* Pods-ExampleCustomUISwitch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89C5C9571AAB29B2CF44A458CBEDA46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE623B133E7D8340B97D1A88E15BB893 /* CustomUISwitch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7DAD39EBB56449097E4E538E1ACB7D95 /* CustomUISwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87A9923AF2C7FB8418F499425237899 /* Build configuration list for PBXNativeTarget "CustomUISwitch" */;
+			buildPhases = (
+				A89C5C9571AAB29B2CF44A458CBEDA46 /* Headers */,
+				6FAF6A55BD6E31C0EFDD99FC19BB8FC1 /* Sources */,
+				D8E8D0BBE3FDF51E0212CEDA0024EA86 /* Frameworks */,
+				966EC78F31C67F7280CE673A223DFA91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomUISwitch;
+			productName = CustomUISwitch;
+			productReference = 0F9AC69F0B99D3D1E1CC0F44F572FCE5 /* CustomUISwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1BCBE526F8383C9FAC3C07E89545456 /* Pods-ExampleCustomUISwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90999BA510EBA4E535F9BF5000DFBECE /* Build configuration list for PBXNativeTarget "Pods-ExampleCustomUISwitch" */;
+			buildPhases = (
+				84131A909E74D29297D452A7A8543AC3 /* Headers */,
+				735F631DCB7B48341E7F5125D8445813 /* Sources */,
+				BBAE592DB52AC0FA7D752C7D10382874 /* Frameworks */,
+				80891FE6EE05F9F7BDC33F96CC079AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6A3CAC3BFA8707941641F973E1B3022 /* PBXTargetDependency */,
+			);
+			name = "Pods-ExampleCustomUISwitch";
+			productName = "Pods-ExampleCustomUISwitch";
+			productReference = 36EAAD64998C78C4E74B33F62B24C704 /* Pods_ExampleCustomUISwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 79D53098B39546FD4B599BA0805E2314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DAD39EBB56449097E4E538E1ACB7D95 /* CustomUISwitch */,
+				C1BCBE526F8383C9FAC3C07E89545456 /* Pods-ExampleCustomUISwitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80891FE6EE05F9F7BDC33F96CC079AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966EC78F31C67F7280CE673A223DFA91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FAF6A55BD6E31C0EFDD99FC19BB8FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6114390654EA4710D5EBE4563E58EC86 /* CustomSwitch.swift in Sources */,
+				955ED9BFF3E1488356253BD5C505F949 /* CustomThumbView.swift in Sources */,
+				0C94BAE640CE808444CF5B2E6971B2CC /* CustomUISwitch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		735F631DCB7B48341E7F5125D8445813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E0BE1F5D88512515A5AF1E151731CB /* Pods-ExampleCustomUISwitch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6A3CAC3BFA8707941641F973E1B3022 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CustomUISwitch;
+			target = 7DAD39EBB56449097E4E538E1ACB7D95 /* CustomUISwitch */;
+			targetProxy = 0A361004384BE8E99E4AC974AC4C69FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43E1C1686D1794A40A475A5D1F1665A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A0EAEA0F7488FEC5B21EB68A6FA00E /* Pods-ExampleCustomUISwitch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleCustomUISwitch/Pods-ExampleCustomUISwitch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleCustomUISwitch/Pods-ExampleCustomUISwitch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CE281642D6EE9FAB113046B4B6328A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A082D8312710EC17B816384E0ADF0932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CustomUISwitch/CustomUISwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CustomUISwitch/CustomUISwitch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CustomUISwitch/CustomUISwitch.modulemap";
+				PRODUCT_MODULE_NAME = CustomUISwitch;
+				PRODUCT_NAME = CustomUISwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A926C48BEAEB0C44C75725E015DC78A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CustomUISwitch/CustomUISwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CustomUISwitch/CustomUISwitch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CustomUISwitch/CustomUISwitch.modulemap";
+				PRODUCT_MODULE_NAME = CustomUISwitch;
+				PRODUCT_NAME = CustomUISwitch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC46746B7A2FD4142FDF3D7721CD99C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F650BE8D42AED616DE6418A56DB617 /* Pods-ExampleCustomUISwitch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleCustomUISwitch/Pods-ExampleCustomUISwitch-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleCustomUISwitch/Pods-ExampleCustomUISwitch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFA1578582149B7E24AD55CBA30F07A /* Debug */,
+				4CE281642D6EE9FAB113046B4B6328A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90999BA510EBA4E535F9BF5000DFBECE /* Build configuration list for PBXNativeTarget "Pods-ExampleCustomUISwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC46746B7A2FD4142FDF3D7721CD99C5 /* Debug */,
+				43E1C1686D1794A40A475A5D1F1665A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87A9923AF2C7FB8418F499425237899 /* Build configuration list for PBXNativeTarget "CustomUISwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A082D8312710EC17B816384E0ADF0932 /* Debug */,
+				A926C48BEAEB0C44C75725E015DC78A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

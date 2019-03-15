@@ -1,0 +1,16 @@
+PODS:
+  - CustomUISwitch (0.0.1)
+
+DEPENDENCIES:
+  - CustomUISwitch (from `/Users/llovretic/Desktop/Posao/FACTORY/CustomUISwitch`)
+
+EXTERNAL SOURCES:
+  CustomUISwitch:
+    :path: "/Users/llovretic/Desktop/Posao/FACTORY/CustomUISwitch"
+
+SPEC CHECKSUMS:
+  CustomUISwitch: 5e7882774a17fa7370293e61578faaa8b5aa6106
+
+PODFILE CHECKSUM: 165922058e7532f7d6bbc30a98b974799aca70b5
+
+COCOAPODS: 1.6.1

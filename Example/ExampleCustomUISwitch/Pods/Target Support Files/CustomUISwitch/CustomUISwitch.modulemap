@@ -1,0 +1,6 @@
+framework module CustomUISwitch {
+  umbrella header "CustomUISwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}
