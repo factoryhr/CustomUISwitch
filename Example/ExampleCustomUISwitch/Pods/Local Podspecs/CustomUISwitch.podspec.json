@@ -15,7 +15,8 @@
     "ios": "10.0"
   },
   "source": {
-    "path": "Sources/"
+    "git": "https://github.com/factoryhr/CustomUISwitch.git",
+    "tag": "master"
   },
   "ios": {
     "exclude_files": "Sources/Pods"

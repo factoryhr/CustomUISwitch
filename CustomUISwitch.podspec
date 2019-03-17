@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint ExampleCustomUISwitch' to ensure this is a
+#  Be sure to run `pod spec lint CustomUISwitch' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
@@ -46,15 +46,15 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #  Specify the location from where the source should be retrieved.
-  #spec.source       = { :git => "http://EXAMPLE/Switch.git", :tag => "master" }
+  spec.source       = { :git => "https://github.com/factoryhr/CustomUISwitch.git", :tag => "0.0.1" }
   #source for local lib development.
-  spec.source       = { :path => "Sources/"}
+  #spec.source       = { :path => "Sources/"}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #  CocoaPods is smart about how it includes source code. For source files
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
   spec.ios.exclude_files = 'Sources/Pods'
-  spec.source_files  = "Sources/**/*.swift"
+  spec.source_files  = 'Sources/**/*.swift'
   spec.swift_version = '4.2'
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

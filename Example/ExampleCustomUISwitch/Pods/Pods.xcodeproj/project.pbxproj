@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C94BAE640CE808444CF5B2E6971B2CC /* CustomUISwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */; };
+		0C94BAE640CE808444CF5B2E6971B2CC /* CustomUISwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A17004D815C2A708D785C0195DC621 /* CustomUISwitch-dummy.m */; };
 		2CF5BAB92F063799EBF5DE12F6342C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		6114390654EA4710D5EBE4563E58EC86 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */; };
+		6114390654EA4710D5EBE4563E58EC86 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3C586A65A298F1488DA82D26A21A1 /* CustomSwitch.swift */; };
 		82A21C8DABD4106AC06C23C999427E1C /* Pods-ExampleCustomUISwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B35B6DBF2C09A754D34372E882E8B8D /* Pods-ExampleCustomUISwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84E0BE1F5D88512515A5AF1E151731CB /* Pods-ExampleCustomUISwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AEB45993BA97AE17BDEA016FBF1B85 /* Pods-ExampleCustomUISwitch-dummy.m */; };
-		955ED9BFF3E1488356253BD5C505F949 /* CustomThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */; };
+		955ED9BFF3E1488356253BD5C505F949 /* CustomThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CA69628B12DDB7DF803761015A7E9 /* CustomThumbView.swift */; };
 		B7D302BD5D565E9D5BF7F0AD1EC99C20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		C8B623A3466D437CE78EC457419863CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		DE623B133E7D8340B97D1A88E15BB893 /* CustomUISwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE623B133E7D8340B97D1A88E15BB893 /* CustomUISwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F65971120D118A4BE4CD6EC460F67F /* CustomUISwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,30 +30,27 @@
 
 /* Begin PBXFileReference section */
 		0F9AC69F0B99D3D1E1CC0F44F572FCE5 /* CustomUISwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CustomUISwitch.framework; path = CustomUISwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-umbrella.h"; sourceTree = "<group>"; };
 		1DAB3BBCADF02EA9E710DC7EB72009C9 /* Pods-ExampleCustomUISwitch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleCustomUISwitch-frameworks.sh"; sourceTree = "<group>"; };
-		20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomThumbView.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomThumbView.swift; sourceTree = "<group>"; };
 		36EAAD64998C78C4E74B33F62B24C704 /* Pods_ExampleCustomUISwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExampleCustomUISwitch.framework; path = "Pods-ExampleCustomUISwitch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A0EAEA0F7488FEC5B21EB68A6FA00E /* Pods-ExampleCustomUISwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleCustomUISwitch.release.xcconfig"; sourceTree = "<group>"; };
-		38F5CCD1A1BC5494D49EC63305B28463 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3D1CA69628B12DDB7DF803761015A7E9 /* CustomThumbView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomThumbView.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomThumbView.swift; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		41DC36E6BF0E067B0088DB347C407386 /* Pods-ExampleCustomUISwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExampleCustomUISwitch.modulemap"; sourceTree = "<group>"; };
 		4B35B6DBF2C09A754D34372E882E8B8D /* Pods-ExampleCustomUISwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleCustomUISwitch-umbrella.h"; sourceTree = "<group>"; };
+		562A4FB9F5C7DF36AAE2B6CBFDD0A25F /* CustomUISwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CustomUISwitch-Info.plist"; sourceTree = "<group>"; };
 		57AEB45993BA97AE17BDEA016FBF1B85 /* Pods-ExampleCustomUISwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleCustomUISwitch-dummy.m"; sourceTree = "<group>"; };
 		66F650BE8D42AED616DE6418A56DB617 /* Pods-ExampleCustomUISwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleCustomUISwitch.debug.xcconfig"; sourceTree = "<group>"; };
-		6E34109B8F0E620E292986513FC34F3B /* CustomUISwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CustomUISwitch.modulemap; sourceTree = "<group>"; };
-		6F9C03D25FA7C25E82061B36C8911755 /* CustomUISwitch.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CustomUISwitch.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		75B0F0B68CC52B389BF852C3CFF50667 /* Pods-ExampleCustomUISwitch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleCustomUISwitch-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D7EC492640349CD187C4D8774EA59BF /* Pods-ExampleCustomUISwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleCustomUISwitch-Info.plist"; sourceTree = "<group>"; };
-		84137EFCCD06DF514EDA18B7357F6B5B /* CustomUISwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CustomUISwitch-Info.plist"; sourceTree = "<group>"; };
+		8E4E7E09021BCB4E48AF5D22CE44C14D /* CustomUISwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CustomUISwitch.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A5F9AEB23226CDEBB9B3579CFFAD4733 /* Pods-ExampleCustomUISwitch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleCustomUISwitch-acknowledgements.plist"; sourceTree = "<group>"; };
-		B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CustomUISwitch.xcconfig; sourceTree = "<group>"; };
-		B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CustomUISwitch-dummy.m"; sourceTree = "<group>"; };
-		B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSwitch.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomSwitch.swift; sourceTree = "<group>"; };
-		EB01B0684F316B23A790EA834434F087 /* CustomUISwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-prefix.pch"; sourceTree = "<group>"; };
+		CEC3C586A65A298F1488DA82D26A21A1 /* CustomSwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSwitch.swift; path = Sources/CustomUISwitch/CustomUISwitch/CustomSwitch.swift; sourceTree = "<group>"; };
+		D8D885D579124C77848C1AAC2F599CDF /* CustomUISwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CustomUISwitch.modulemap; sourceTree = "<group>"; };
+		E4A17004D815C2A708D785C0195DC621 /* CustomUISwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CustomUISwitch-dummy.m"; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F3B0A1CD1F0587859FB2AFAACF6C8771 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F7F65971120D118A4BE4CD6EC460F67F /* CustomUISwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-umbrella.h"; sourceTree = "<group>"; };
+		FEE823DE9FC1AB555D03E164E026B5DF /* CustomUISwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomUISwitch-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,20 +82,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		263A1B54F38319E2CDE4D6BC03CE371C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6E34109B8F0E620E292986513FC34F3B /* CustomUISwitch.modulemap */,
-				B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */,
-				B4FBCDFD1E458372757B0F7B40749CE1 /* CustomUISwitch-dummy.m */,
-				84137EFCCD06DF514EDA18B7357F6B5B /* CustomUISwitch-Info.plist */,
-				EB01B0684F316B23A790EA834434F087 /* CustomUISwitch-prefix.pch */,
-				186975F08746FADD465C2ACBCB16F6AE /* CustomUISwitch-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/ExampleCustomUISwitch/Pods/Target Support Files/CustomUISwitch";
-			sourceTree = "<group>";
-		};
 		2A5F0F0E05CFC674E89ACFE8E5CB1A77 /* Pods-ExampleCustomUISwitch */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,27 +99,19 @@
 			path = "Target Support Files/Pods-ExampleCustomUISwitch";
 			sourceTree = "<group>";
 		};
-		3C9530B1E8D09FAE2B02F13E58BA19A4 /* Pod */ = {
+		35D4135B7462DBF18C4A04292150FBA7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6F9C03D25FA7C25E82061B36C8911755 /* CustomUISwitch.podspec */,
-				F3B0A1CD1F0587859FB2AFAACF6C8771 /* LICENSE */,
-				38F5CCD1A1BC5494D49EC63305B28463 /* README.md */,
+				D8D885D579124C77848C1AAC2F599CDF /* CustomUISwitch.modulemap */,
+				8E4E7E09021BCB4E48AF5D22CE44C14D /* CustomUISwitch.xcconfig */,
+				E4A17004D815C2A708D785C0195DC621 /* CustomUISwitch-dummy.m */,
+				562A4FB9F5C7DF36AAE2B6CBFDD0A25F /* CustomUISwitch-Info.plist */,
+				FEE823DE9FC1AB555D03E164E026B5DF /* CustomUISwitch-prefix.pch */,
+				F7F65971120D118A4BE4CD6EC460F67F /* CustomUISwitch-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "../Target Support Files/CustomUISwitch";
 			sourceTree = "<group>";
-		};
-		52213C6F64F9136DC0C3213DA2490CE1 /* CustomUISwitch */ = {
-			isa = PBXGroup;
-			children = (
-				B60987E14F3B862FFDAF1D01156C1F59 /* CustomSwitch.swift */,
-				20BB3EEAA4861524C02182347C980EBF /* CustomThumbView.swift */,
-				3C9530B1E8D09FAE2B02F13E58BA19A4 /* Pod */,
-				263A1B54F38319E2CDE4D6BC03CE371C /* Support Files */,
-			);
-			name = CustomUISwitch;
-			path = /Users/llovretic/Desktop/Posao/FACTORY/CustomUISwitch;
-			sourceTree = "<absolute>";
 		};
 		6637A3A313E2A7836C8B0818C7D30D07 /* Targets Support Files */ = {
 			isa = PBXGroup;
@@ -144,14 +119,6 @@
 				2A5F0F0E05CFC674E89ACFE8E5CB1A77 /* Pods-ExampleCustomUISwitch */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		734540BC9151113E9CA20B03465A9C1E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				52213C6F64F9136DC0C3213DA2490CE1 /* CustomUISwitch */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		79D53098B39546FD4B599BA0805E2314 /* Products */ = {
@@ -163,12 +130,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		92CC7234F2BC2E4A67FABE4B66EB909C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE5976C75780A77F12BF9C79BB374FB8 /* CustomUISwitch */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE5976C75780A77F12BF9C79BB374FB8 /* CustomUISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				CEC3C586A65A298F1488DA82D26A21A1 /* CustomSwitch.swift */,
+				3D1CA69628B12DDB7DF803761015A7E9 /* CustomThumbView.swift */,
+				35D4135B7462DBF18C4A04292150FBA7 /* Support Files */,
+			);
+			name = CustomUISwitch;
+			path = CustomUISwitch;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				734540BC9151113E9CA20B03465A9C1E /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				92CC7234F2BC2E4A67FABE4B66EB909C /* Pods */,
 				79D53098B39546FD4B599BA0805E2314 /* Products */,
 				6637A3A313E2A7836C8B0818C7D30D07 /* Targets Support Files */,
 			);
@@ -482,7 +468,7 @@
 		};
 		A082D8312710EC17B816384E0ADF0932 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */;
+			baseConfigurationReference = 8E4E7E09021BCB4E48AF5D22CE44C14D /* CustomUISwitch.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -518,7 +504,7 @@
 		};
 		A926C48BEAEB0C44C75725E015DC78A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28AB071F784316CFF207548FEFC9105 /* CustomUISwitch.xcconfig */;
+			baseConfigurationReference = 8E4E7E09021BCB4E48AF5D22CE44C14D /* CustomUISwitch.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
