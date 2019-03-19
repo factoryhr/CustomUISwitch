@@ -9,9 +9,12 @@
 import UIKit
 
 @IBDesignable
-public class CustomSwitch: UIControl {
+final class CustomSwitch: UIControl {
     
     // MARK: Public properties
+    public var animationDelay: Double = 0
+    public var animationSpriteWithDamping = CGFloat(0.7)
+    public var initialSpringVelocity = CGFloat(0.5)
     
     @IBInspectable public var isOn:Bool = true
     
@@ -26,7 +29,6 @@ public class CustomSwitch: UIControl {
     @IBInspectable  public var onTintColor: UIColor = UIColor(red: 144/255, green: 202/255, blue: 119/255, alpha: 1) {
         didSet {
             self.setupUI()
-            
         }
     }
     
@@ -54,7 +56,6 @@ public class CustomSwitch: UIControl {
     private var privateCornerRadius: CGFloat = 0.5 {
         didSet {
             self.layoutSubviews()
-            
         }
     }
     
@@ -114,7 +115,6 @@ public class CustomSwitch: UIControl {
         didSet {
             self.offImageView.image = offImage
             self.layoutSubviews()
-            
         }
         
     }
@@ -156,34 +156,30 @@ public class CustomSwitch: UIControl {
         }
     }
     
-    // MARK: Private properties
-    fileprivate var thumbView = CustomThumbView(frame: CGRect.zero)
-    fileprivate var onImageView = UIImageView(frame: CGRect.zero)
-    fileprivate var offImageView = UIImageView(frame: CGRect.zero)
+    public var thumbView = CustomThumbView(frame: CGRect.zero)
+    public var onImageView = UIImageView(frame: CGRect.zero)
+    public var offImageView = UIImageView(frame: CGRect.zero)
+    public var onPoint = CGPoint.zero
+    public var offPoint = CGPoint.zero
+    public var animationOptions: UIView.AnimationOptions = [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction]
     
-    fileprivate var onPoint = CGPoint.zero
-    fileprivate var offPoint = CGPoint.zero
-    fileprivate var isAnimating = false
+    //Private props
+    public var isAnimating = false
     
-    
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         self.setupUI()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         self.setupUI()
     }
 }
 
 // MARK: Private methods
 extension CustomSwitch {
-    
     fileprivate func setupUI() {
-        
         // clear self before configuration
         self.clear()
         
@@ -206,7 +202,6 @@ extension CustomSwitch {
         self.addSubview(self.offImageView)
         
         self.setupLabels()
-        
     }
     
     
@@ -216,7 +211,7 @@ extension CustomSwitch {
         }
     }
     
-    override open func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         super.beginTracking(touch, with: event)
         
         self.animate()
@@ -233,21 +228,19 @@ extension CustomSwitch {
             self.setupViewsOnAction()
             self.completeAction()
         }
-        
     }
     
     fileprivate func animate(on:Bool? = nil) {
-        
         self.isOn = on ?? !self.isOn
         
         self.isAnimating = true
         
-        UIView.animate(withDuration: self.animationDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [UIView.AnimationOptions.curveEaseOut, UIView.AnimationOptions.beginFromCurrentState, UIView.AnimationOptions.allowUserInteraction], animations: {
-            self.setupViewsOnAction()
-            
+        UIView.animate(withDuration: self.animationDuration, delay: animationDelay, usingSpringWithDamping: animationSpriteWithDamping, initialSpringVelocity: initialSpringVelocity, options: animationOptions,
+                       animations: {
+                        self.setupViewsOnAction()
         }, completion: { _ in
-            self.completeAction()
-            
+            self.isAnimating = false
+            self.sendActions(for: UIControlEvents.valueChanged)
         })
     }
     
@@ -255,16 +248,12 @@ extension CustomSwitch {
         self.thumbView.frame.origin.x = self.isOn ? self.onPoint.x : self.offPoint.x
         self.backgroundColor = self.isOn ? self.onTintColor : self.offTintColor
         self.setOnOffImageFrame()
-        
     }
-    
+
     private func completeAction() {
         self.isAnimating = false
-        self.sendActions(for: UIControl.Event.valueChanged)
-        
+        self.sendActions(for: UIControlEvents.valueChanged)
     }
-    
-    
     
 }
 
@@ -292,11 +281,9 @@ extension CustomSwitch {
             
             //label frame
             if self.areLabelsShown {
-                
                 let labelWidth = self.bounds.width / 2 - self.padding * 2
                 self.labelOn.frame = CGRect(x: 0, y: 0, width: labelWidth, height: self.frame.height)
                 self.labelOff.frame = CGRect(x: self.frame.width - labelWidth, y: 0, width: labelWidth, height: self.frame.height)
-                
             }
             
             // on/off images
@@ -372,6 +359,5 @@ extension CustomSwitch {
         self.offImageView.center.x = !self.isOn ? self.offPoint.x + self.thumbView.frame.size.width / 2 : 0
         self.onImageView.alpha = self.isOn ? 1.0 : 0.0
         self.offImageView.alpha = self.isOn ? 0.0 : 1.0
-        
     }
 }
