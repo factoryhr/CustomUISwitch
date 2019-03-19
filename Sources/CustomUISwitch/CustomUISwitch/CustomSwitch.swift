@@ -9,12 +9,13 @@
 import UIKit
 
 @IBDesignable
-final class CustomSwitch: UIControl {
+public class CustomSwitch: UIControl {
     
     // MARK: Public properties
     public var animationDelay: Double = 0
     public var animationSpriteWithDamping = CGFloat(0.7)
     public var initialSpringVelocity = CGFloat(0.5)
+    public var animationOptions: UIView.AnimationOptions = [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction]
     
     @IBInspectable public var isOn:Bool = true
     
@@ -161,7 +162,7 @@ final class CustomSwitch: UIControl {
     public var offImageView = UIImageView(frame: CGRect.zero)
     public var onPoint = CGPoint.zero
     public var offPoint = CGPoint.zero
-    public var animationOptions: UIView.AnimationOptions = [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction]
+   
     
     //Private props
     public var isAnimating = false
