@@ -162,12 +162,9 @@ public class CustomSwitch: UIControl {
     public var offImageView = UIImageView(frame: CGRect.zero)
     public var onPoint = CGPoint.zero
     public var offPoint = CGPoint.zero
-   
-    
-    //Private props
     public var isAnimating = false
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.setupUI()
     }
@@ -212,7 +209,7 @@ extension CustomSwitch {
         }
     }
     
-    override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
+    override open func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         super.beginTracking(touch, with: event)
         
         self.animate()
@@ -236,12 +233,11 @@ extension CustomSwitch {
         
         self.isAnimating = true
         
-        UIView.animate(withDuration: self.animationDuration, delay: animationDelay, usingSpringWithDamping: animationSpriteWithDamping, initialSpringVelocity: initialSpringVelocity, options: animationOptions,
-                       animations: {
-                        self.setupViewsOnAction()
+        UIView.animate(withDuration: self.animationDuration, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [UIView.AnimationOptions.curveEaseOut, UIView.AnimationOptions.beginFromCurrentState, UIView.AnimationOptions.allowUserInteraction], animations: {
+            self.setupViewsOnAction()
+            
         }, completion: { _ in
-            self.isAnimating = false
-            self.sendActions(for: UIControlEvents.valueChanged)
+            self.completeAction()
         })
     }
     

@@ -39,7 +39,5 @@ class ViewController: UIViewController {
             customSwitch.widthAnchor.constraint(equalToConstant: 80),
             customSwitch.heightAnchor.constraint(equalToConstant: 30)])
     }
-
-
 }
 
