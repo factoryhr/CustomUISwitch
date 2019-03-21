@@ -15,7 +15,7 @@ public class CustomSwitch: UIControl {
     public var animationDelay: Double = 0
     public var animationSpriteWithDamping = CGFloat(0.7)
     public var initialSpringVelocity = CGFloat(0.5)
-    public var animationOptions: UIView.AnimationOptions = [UIViewAnimationOptions.curveEaseOut, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.allowUserInteraction]
+    public var animationOptions: UIView.AnimationOptions = [UIView.AnimationOptions.curveEaseOut, UIView.AnimationOptions.beginFromCurrentState, UIView.AnimationOptions.allowUserInteraction]
     
     @IBInspectable public var isOn:Bool = true
     
@@ -233,7 +233,7 @@ extension CustomSwitch {
         
         self.isAnimating = true
         
-        UIView.animate(withDuration: self.animationDuration, delay: animationDelay, usingSpringWithDamping: usingSpringWithDamping, initialSpringVelocity: initialSpringVelocity, options: animationOptions, animations: {
+        UIView.animate(withDuration: self.animationDuration, delay: animationDelay, usingSpringWithDamping: animationSpriteWithDamping, initialSpringVelocity: initialSpringVelocity, options: animationOptions, animations: {
             self.setupViewsOnAction()
             
         }, completion: { _ in
@@ -249,7 +249,7 @@ extension CustomSwitch {
 
     private func completeAction() {
         self.isAnimating = false
-        self.sendActions(for: UIControlEvents.valueChanged)
+        self.sendActions(for: UIControl.Event.valueChanged)
     }
     
 }

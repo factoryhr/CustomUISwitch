@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CustomThumbView: UIView {
+public class CustomThumbView: UIView {
     
     fileprivate(set) var thumbImageView = UIImageView(frame: CGRect.zero)
     
@@ -29,7 +29,7 @@ final class CustomThumbView: UIView {
 
 extension CustomThumbView {
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         self.thumbImageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         self.thumbImageView.layer.cornerRadius = self.layer.cornerRadius
