@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CustomUISwitch"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.0"
   spec.summary      = "Customizable switch."
   spec.description  = <<-DESC
   Switch is a pod that contains code for creating customizable UI Switch element.
@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #  Specify the location from where the source should be retrieved.
-  spec.source       = { :git => "https://github.com/factoryhr/CustomUISwitch.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/factoryhr/CustomUISwitch.git", :tag => spec.version.to_s }
   #source for local lib development.
   #spec.source       = { :path => "Sources/"}
 
