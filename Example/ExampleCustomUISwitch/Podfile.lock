@@ -1,16 +1,16 @@
 PODS:
-  - CustomUISwitch (0.0.1)
+  - CustomUISwitch (1.0.0)
 
 DEPENDENCIES:
   - CustomUISwitch
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  http://git.plavatvornica.com/factory/iOS/podspec.git:
     - CustomUISwitch
 
 SPEC CHECKSUMS:
-  CustomUISwitch: 2076af90de425af11cc7631dda40bc441e707b0f
+  CustomUISwitch: f0bc2244d82f45c348e0e190ae6126fef110a69b
 
-PODFILE CHECKSUM: 16d8f16534212463837814afa7b567d7ab428520
+PODFILE CHECKSUM: 08208c222064d7000a3896ecd6f47d2be623835c
 
 COCOAPODS: 1.6.1
