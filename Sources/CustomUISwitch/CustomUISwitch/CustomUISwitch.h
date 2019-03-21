@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 //! Project version number for LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.
-FOUNDATION_EXPORT double LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitchVersionNumber;
+FOUNDATION_EXPORT double CustomUISwitchVersionNumber;
 
 //! Project version string for LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.
-FOUNDATION_EXPORT const unsigned char LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitchVersionString[];
+FOUNDATION_EXPORT const unsigned char CustomUISwitchVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch/PublicHeader.h>
 

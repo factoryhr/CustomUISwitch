@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		479B7C95223B943B004F7248 /* LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 479B7C93223B943B004F7248 /* LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		479B7C95223B943B004F7248 /* CustomUISwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 479B7C93223B943B004F7248 /* CustomUISwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		479B7C9D223B9485004F7248 /* CustomThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B7C9B223B9485004F7248 /* CustomThumbView.swift */; };
 		479B7C9E223B9485004F7248 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B7C9C223B9485004F7248 /* CustomSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		479B7C90223B943B004F7248 /* CustomUISwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomUISwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		479B7C93223B943B004F7248 /* LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h; sourceTree = "<group>"; };
+		479B7C93223B943B004F7248 /* CustomUISwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUISwitch.h; sourceTree = "<group>"; };
 		479B7C94223B943B004F7248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		479B7C9B223B9485004F7248 /* CustomThumbView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomThumbView.swift; sourceTree = "<group>"; };
 		479B7C9C223B9485004F7248 /* CustomSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 			children = (
 				479B7C9C223B9485004F7248 /* CustomSwitch.swift */,
 				479B7C9B223B9485004F7248 /* CustomThumbView.swift */,
-				479B7C93223B943B004F7248 /* LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h */,
+				479B7C93223B943B004F7248 /* CustomUISwitch.h */,
 				479B7C94223B943B004F7248 /* Info.plist */,
 			);
 			path = CustomUISwitch;
@@ -65,7 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479B7C95223B943B004F7248 /* LookingForMagentoDevsThatWillProvideFunctionalityToThisAwesomeSwitch.h in Headers */,
+				479B7C95223B943B004F7248 /* CustomUISwitch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
