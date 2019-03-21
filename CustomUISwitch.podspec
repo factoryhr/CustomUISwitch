@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #  Specify the location from where the source should be retrieved.
-  spec.source       = { :git => "https://github.com/factoryhr/CustomUISwitch.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "https://github.com/factoryhr/CustomUISwitch.git", :branch => "CreateAPod", :tag => spec.version.to_s }
   #source for local lib development.
   #spec.source       = { :path => "Sources/"}
 
